@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Erlich - Frontend/Fullstack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; direction: ltr; }
+  .container { max-width: 900px; margin: auto; padding: 2rem; }
+  h1 { color: #2c3e50; }
+  h2 { color: #34495e; margin-top: 2rem; }
+  a.button { display: inline-block; margin: 0.5rem 0; padding: 0.5rem 1rem; background: #3498db; color: #fff; text-decoration: none; border-radius: 5px; transition: background 0.3s, transform 0.2s; }
+  a.button:hover { background: #2980b9; transform: translateY(-2px); }
+  .project { background: #fff; padding: 1rem; margin-top: 1rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s; }
+  .project:hover { transform: translateY(-3px); }
+  .lang-toggle { cursor: pointer; font-weight: 700; color: #3498db; text-align: center; margin-bottom: 1rem; }
+  .hidden { display: none; }
+  ul { padding-left: 1.5rem; }
+  li { margin-bottom: 0.5rem; }
+
+  /* RTL adjustments for Hebrew */
+  #he { direction: rtl; text-align: right; }
+  #en { direction: ltr; text-align: left; }
+
+  @media (min-width: 601px) {
+    .lang-toggle { float: right; text-align: right; margin-bottom: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="lang-toggle" onclick="toggleLang()">EN / עברית</div>
+
+  <div id="he">
+    <h1>דניאל ארליך – מפתח Frontend / Fullstack</h1>
+    <p>מפתח fullstack עם נטייה חזקה ל‑frontend, ניסיון ב‑React, Next.js, Node.js, אנימציות (Framer Motion/GSAP), וגישה ממוקדת <strong>UX/UI, רספונסיביות ונגישות</strong>.</p>
+    <p>זמין למשרה מלאה, חלקית או קבלן, מרחוק או on-site באזור תל אביב.</p>
+
+    <h2>פרויקטים מרכזיים</h2>
+    <div class="project">
+      <h3>ThaiIslands 🌴</h3>
+      <p>React + Next.js, API דינמי עם MongoDB, תמיכה ב-i18n, אנימציות עם Framer Motion, ממשק אינטראקטיבי ורספונסיבי.</p>
+      <a class="button" href="https://thaiislands.vercel.app" target="_blank">Live Demo</a>
+      <a class="button" href="https://github.com/GNGscr/Thaiislands" target="_blank">קוד</a>
+    </div>
+
+    <div class="project">
+      <h3>Weather App ☁️</h3>
+      <p>אפליקציית React עם ניהול state דרך URL, חיבור ל-API חי, רספונסיבי ונגיש.</p>
+      <a class="button" href="https://github.com/GNGscr/WeatherApp" target="_blank">קוד</a>
+    </div>
+
+    <div class="project">
+      <h3>Reservations Dashboard 📊</h3>
+      <p>פרויקט fullstack עם Node.js, pagination, סינון ומיון, קוד מודולרי וממשק מבוסס קומפוננטות.</p>
+      <a class="button" href="https://github.com/GNGscr/ReservationsDashboard" target="_blank">קוד</a>
+    </div>
+
+    <h2>מה אני מביא</h2>
+    <ul>
+      <li>התמקדות ב-Frontend עם דגש על UX, אנימציות וממשק אינטראקטיבי</li>
+      <li>ניסיון עם React, Next.js, Node.js, פתרונות מודולריים ומאורגנים</li>
+      <li>מיומנות בארכיטקטורה מבוססת קומפוננטות, רספונסיביות ונגישות</li>
+      <li>גמישות ויכולת להתחיל מיידית, גם עצמאית וגם בצוות</li>
+    </ul>
+  </div>
+
+  <div id="en" class="hidden">
+    <h1>Daniel Erlich – Frontend/Fullstack Developer</h1>
+    <p>Frontend-oriented fullstack developer with experience in React, Next.js, Node.js, and animations (Framer Motion/GSAP), focusing on <strong>UX/UI, responsive design, and accessibility</strong>.</p>
+    <p>Available immediately for full-time, part-time, or freelance, remote or on-site around Tel Aviv.</p>
+
+    <h2>Key Projects</h2>
+    <div class="project">
+      <h3>ThaiIslands 🌴</h3>
+      <p>React + Next.js, dynamic API with MongoDB, i18n, Framer Motion animations, interactive & responsive UI.</p>
+      <a class="button" href="https://thaiislands.vercel.app" target="_blank">Live Demo</a>
+      <a class="button" href="https://github.com/GNGscr/Thaiislands" target="_blank">Code</a>
+    </div>
+
+    <div class="project">
+      <h3>Weather App ☁️</h3>
+      <p>React app with URL search param state, live API, responsive & accessible design.</p>
+      <a class="button" href="https://github.com/GNGscr/WeatherApp" target="_blank">Code</a>
+    </div>
+
+    <div class="project">
+      <h3>Reservations Dashboard 📊</h3>
+      <p>Fullstack project with Node.js backend, pagination, filter/sort, modular code, component-driven frontend.</p>
+      <a class="button" href="https://github.com/GNGscr/ReservationsDashboard" target="_blank">Code</a>
+    </div>
+
+    <h2>What I Offer</h2>
+    <ul>
+      <li>Frontend-oriented solutions with focus on UX, animations, and interactive UI</li>
+      <li>Experience with React, Next.js, Node.js, maintainable & modular solutions</li>
+      <li>Skilled in component-driven architecture, responsive design & accessibility</li>
+      <li>Flexible and ready to start immediately, independently or as part of a team</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function toggleLang() {
+    const he = document.getElementById('he');
+    const en = document.getElementById('en');
+    he.classList.toggle('hidden');
+    en.classList.toggle('hidden');
+  }
+</script>
+</body>
+</html>
